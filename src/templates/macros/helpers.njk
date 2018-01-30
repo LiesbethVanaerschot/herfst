@@ -1,0 +1,9 @@
+{% macro icon(name, modifiers, extraClasses) %}
+<svg
+    class="icon icon-{{name}}{% for modifier in modifiers %} icon--{{modifier}}{% endfor %}{% for extraClass in extraClasses %} {{extraClass}}{% endfor %}"
+    aria-hidden="true"
+    role="presentation"
+>
+    <use xlink:href="{{imagePath}}/symbols.svg#{{ name }}"></use>
+</svg>
+{% endmacro %}
