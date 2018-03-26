@@ -1,15 +1,23 @@
 $colors-brand: (
     primary: (
-        base: #00b9d4,
-        dark: darken(#00b9d4, 10%)
+        base: #f9f6dd,
+        dark: darken(#f9f6dd, 10%)
+    ),
+    woods: (
+        base: #107246
+    ),
+    brights: (
+        base: #ff431d
     )
 );
 
 $colors-gray: (
     primary: (
+        lightest: #fff,
         light: #eee,
         base: #999,
-        dark: #333
+        dark: #333,
+        darkest: #000
     )
 );
 

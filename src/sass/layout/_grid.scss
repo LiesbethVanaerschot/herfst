@@ -1,0 +1,35 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.45fr);
+    grid-auto-flow: row dense;
+
+    &__col {
+        position: relative;
+        min-height: 300px;
+        //width: 50%;
+        //flex: 1 0 50%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+        }
+
+        @media (min-width: $breakpoint-md) {
+            min-height: 445px;
+            width: calc(100% / 3);
+            //flex: 1 0 calc(100%/3);
+        }
+
+        @media (min-width: $breakpoint-lg) {
+            min-height: 590px;
+        }
+    }
+}
