@@ -1,5 +1,7 @@
 import 'svgxuse';
+import 'promise-polyfill';
+import 'whatwg-fetch';
 
-import example from './modules/example';
+import getInstaFeed from './modules/get-insta-feed';
 
-example.init();
+getInstaFeed.init();

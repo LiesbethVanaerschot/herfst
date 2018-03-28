@@ -52,7 +52,9 @@
   },
   "dependencies": {
     "normalize.css": "^7.0.0",
-    "svgxuse": "^1.1.22"
+    "promise-polyfill": "^7.1.1",
+    "svgxuse": "^1.1.22",
+    "whatwg-fetch": "^2.0.3"
   },
   "browserslist": [
     "> 5%",
