@@ -9,12 +9,19 @@
         <link rel="stylesheet" href="css/app.css">
         {% block head %}{% endblock %}
     </head>
-    <body>
-        <div class="wrapper">
-            <main class="main">
-                {% block content %}{% endblock %}
-            </main>
+    <body class="overflow">
+      <div class="js-preloader preloader">
+        <div class="preloader__content">
+          <div class="preloader__item first"></div>
+          <div class="preloader__item second"></div>
+          <div class="preloader__item last"></div>
         </div>
-        <script src="js/app.js"></script>
+      </div>
+      <div class="wrapper">
+          <main class="main">
+              {% block content %}{% endblock %}
+          </main>
+      </div>
+      <script src="js/app.js"></script>
     </body>
 </html>

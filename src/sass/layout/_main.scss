@@ -3,11 +3,14 @@
     z-index: 10;
 
     &__header {
+        position: fixed;
+        z-index: 20;
         height: 62px;
+        width: 100%;
         padding: 0 40px;
 
         @media (min-width: $breakpoint-md) {
-            height: auto;
+            height: 164px;
         }
     }
 
@@ -22,6 +25,14 @@
             padding: 60px 0;
             font-size: 4rem;
             text-align: center;
+        }
+    }
+
+    &__content {
+        padding-top: 62px;
+
+        @media (min-width: $breakpoint-md) {
+            padding-top: 164px;
         }
     }
 }

@@ -18,7 +18,10 @@ body {
     font-size: $font-size-base;
     line-height: $line-height-base;
     color: $text-color;
-    padding: 1px;
+
+    &.overflow {
+        overflow: hidden;
+    }
 }
 
 ::-moz-selection {
