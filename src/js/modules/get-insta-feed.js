@@ -42,8 +42,6 @@ const proto = {
                     }
                 }
 
-                proto.createFeed(postArray, postGrid);
-
                 if (proto.createFeed(postArray, postGrid)) {
                     let gridItems = document.querySelectorAll('.grid__item');
                     let body = document.body;
@@ -78,15 +76,15 @@ const proto = {
         let sizeArray = ['item--medium', 'item--large', 'item--small'];
 
         for (let i = 0; i < postArray.length; i++) {
-            let posClass = posArray[Math.floor(Math.random()*posArray.length)];
-            let sizeClass = sizeArray[Math.floor(Math.random()*sizeArray.length)];
+            let posClass = posArray[Math.floor(Math.random() * posArray.length)];
+            let sizeClass = sizeArray[Math.floor(Math.random() * sizeArray.length)];
             let itemHashtag;
             let gridItem = document.createElement('div');
             let itemContent = document.createElement('div');
             let itemImage = document.createElement('img');
             let itemText = document.createElement('p');
 
-            gridItem.classList.add('grid__item','hide', `${posClass}`);
+            gridItem.classList.add('grid__item', 'hide', `${posClass}`);
             itemContent.classList.add('item__content', `${sizeClass}`);
             itemImage.classList.add('item__img');
             itemImage.src = postArray[i].image;
